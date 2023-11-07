@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    background-color: skyblue;
+    background-image: -webkit-linear-gradient(45deg,#7c7e80 50%,#323333 50% );
+    min-height: 800px;
+} 
+#game{
+    height: 500px;
+    width: 390px;
+    border:1px solid black;
+    margin: 1rem auto;
+    background-image: url("https://tse3.mm.bing.net/th?id=OIP.H3_BhyiOOdUsu_0R1_s_ogHaHa&pid=Api&P=0&h=180");
+    position: relative;
+    top: 150px;
+    height: 600px;
+    width: 600px;
+    border-radius: 10rem;
+
+    background-size: contain;
+    overflow: hidden;
+}  
+#bluecar{
+    height: 100px;
+    width: 130px;
+    background: none;
+    position: relative;
+    top: 0px;
+    left: 150px;
+    text-align: center;
+    animation: move 1s linear infinite;
+} 
+#bluecar img{
+    height: 100px;
+}
+@keyframes move {
+    0%{
+        top: 0px;
+    }
+    100%{
+        top: 501px;
+    }
+}
+#greycar{
+    height: 100px;
+    width: 130px;
+    position: relative;
+    top: 350px;
+
+    left: 240px;
+    text-align: center;
+   
+
+}
+#greycar img{
+    height: 100px;
+}
+#result{
+    height: 300px;
+    width: 600px;
+    background-color: aqua;
+    margin: 1rem auto;
+    border-radius: 60px;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    display: none;
+   
+}
+#score{
+    font-size: medium;
+    color: green;
+}
+#btn{
+    padding: 1rem 6rem;
+    border-radius: 20px;
+    border: none;
+    background-color: blueviolet;
+    color: yellow;
+    font-size: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
